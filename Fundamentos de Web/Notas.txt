@@ -1,0 +1,14 @@
+<hr/> crea una línea horizontal
+
+examen
+nos van a dar una foto de una pagina web y tenemos que crear esa pagina, colores, estilos de textos, copiar el diseño de la pagina
+
+para alinear elementos al medio usar
+justify-content:center
+
+atributo class es para ayudar especificamente a css
+
+id > clase > elemento > style en etiqueta peso en css
+para class, queda el ultimo elemento que se especifica
+
+para font size usar rem
