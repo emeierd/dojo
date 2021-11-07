@@ -1,0 +1,204 @@
+* {
+    outline: 1px solid red;
+    font-size: 0;
+    /*font size 0 para que los inline block esten lado a lado */
+}
+
+header img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+
+h1 {
+    position: relative;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #4a4a4a;
+    padding: 16px 0px 8px 8px;
+    margin-left: 80px;
+}
+
+h1 span {
+    color: #24669f
+}
+
+h2 {
+    background: #326ea2;
+    font-size: 2rem;
+    padding: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+main {
+    background: linear-gradient(180deg, rgba(230, 230, 230, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    box-sizing: border-box;
+}
+
+.left-content {
+    box-sizing: border-box;
+    width: 18%;
+    display: inline-block;
+    padding: 8px 4px;
+}
+
+.nav {
+    border-bottom: 1px solid #24669f;
+    margin: 12px 0px;
+}
+
+.internet {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.definition {
+    font-size: 0.9rem;
+    margin: 8px 0px;
+}
+
+.watch {
+    background: #558cbb;
+    color: white;
+    font-size: 1.1rem;
+    padding: 4px 0px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+.resources {
+    background: #ef7600;
+    color: white;
+    font-size: 1.1rem;
+    padding: 4px 0px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+.adds {
+    padding: 12px 0;
+    background-image: url("./images/ad_background.png");
+    background-size: cover;
+}
+
+.add-title {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 14px;
+}
+
+.adds img {
+    height: 100%;
+    width: 60%;
+    object-fit: contain;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.add-link {
+    background: #26c7df;
+    color: white;
+    border-radius: 6px;
+    margin: 16px;
+    display: block;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.internet span {
+    color: red;
+}
+
+.main-content {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 82%;
+    padding-left: 40px;
+}
+
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px 20px 0px;
+    border-bottom: 1px solid #24669f;
+}
+
+.dns {
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.dns p {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #3d77a8;
+    margin: 8px 4px;
+    text-align: justify;
+    display: inline;
+}
+
+.dns img {
+    height: 25px;
+    width: 25px;
+    margin: 4px;
+    display: inline;
+}
+
+.info-container {}
+
+.info-container img {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    height: 60px;
+}
+
+.phone {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #10c3e0;
+}
+
+.main-content p {
+    font-size: 1rem;
+}
+
+.main-footer {
+    border: 4px solid #0085e0;
+    border-bottom: 0px;
+    margin-top: 20px;
+}
+
+.main-footer img {
+    box-sizing: border-box;
+    width: 20%;
+    display: inline-block;
+    padding: 8px;
+}
+
+.big3 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+    padding: 8px;
+}

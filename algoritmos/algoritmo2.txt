@@ -1,0 +1,175 @@
+function multiply(x,y) {
+    console.log(x);
+    console.log(y);
+}
+b = multiply(2,3);
+console.log(b);
+R:
+console.log(2)
+console.log(3)
+undefined
+--------------------------
+function multiply(x,y) {
+    return x*y;
+}
+b = multiply(2,3);
+console.log(b);
+console.log(multiply(5,2));
+R:
+console.log(6)
+console.log(10)
+---------------------------
+var x = [1,2,3,4,5,10];
+for(var i=0; i<5; i++) {
+   i = i + 3; 
+   console.log(i);
+}
+R:
+console.log(3)
+console.log(7)
+---------------------------
+var x=15;
+console.log(x);
+function awesome(){
+    var x=10;
+    console.log(x);
+}
+console.log(x);
+awesome();
+console.log(x);
+R:
+console.log(15)
+console.log(15)
+console.log(10)
+console.log(15)
+---------------------------
+for(var i=0; i<15; i+=2) {
+   console.log(i);
+}
+R:
+console.log(0)
+console.log(2)
+console.log(4)
+console.log(6)
+console.log(8)
+console.log(10)
+console.log(12)
+console.log(14)
+---------------------------
+for(var i=0; i<3; i++) {
+   for(var j=0; j<2; j++) {    
+       console.log(i*j);
+   }
+}
+R:
+console.log(0)
+console.log(0)
+console.log(0)
+console.log(1)
+console.log(0)
+console.log(2)
+---------------------------
+function looping(x,y) {
+   for(var i=0; i<x; i++) {
+      for(var j=0; j<x; j++) {       
+          console.log(i*j);
+      } 
+   }
+}
+z = looping(3,3);
+console.log(z);
+R:
+console.log(0)
+console.log(0)
+console.log(0)
+console.log(0)
+console.log(1)
+console.log(2)
+console.log(0)
+console.log(2)
+console.log(4)
+undefined
+---------------------------
+function looping(x,y) {
+   for(var i=0; i<x; i++) {
+      for(var j=0; j<y; j++) {       
+         console.log(i*j);
+      } 
+   }
+   return x*y;
+}
+z = looping(3,5);
+console.log(z);
+R:
+console.log(0)
+console.log(0)
+console.log(0)
+console.log(0)
+console.log(0)
+console.log(0)
+console.log(1)
+console.log(2)
+console.log(3)
+console.log(4)
+console.log(0)
+console.log(2)
+console.log(4)
+console.log(6)
+console.log(8)
+console.log(15)
+-------------------------------
+function printUpTo(x) {
+    if(x<0){
+        console.log("false);
+        return false;
+    }else{    
+        for(var i=1;i<=x;i++){
+            console.log(i);
+        }
+    }
+}
+printUpTo(1000); // debería imprimir todos los enteros de 1 to 1000
+y = printUpTo(-10); // debería imprimir false
+console.log(y); // debería imprimir false
+--------------------------------------------------------------------
+PrintSum
+Completa el código de más abajo para que la función imprima enteros (integers) de 0 a x y donde cada entero imprima la suma (sum) parcial. Haz que la función entregue la suma final.
+
+function printSum(x) {
+  var sum = 0;
+  for(var i=0;i<=x;i++){
+      console.log(i);
+      sum+=i;
+      console.log(sum);
+  }
+  return sum
+}
+y = printSum(255) // debería imprimir todos los enteros de 0 a 255 y que cada entero imprima la suma parcial.
+console.log(y) // // debería imprimir 32640
+--------------------------------------------------------------------------------------
+PrintSumArray
+Completa el código a continuación para que la función entregue la suma de todos los valores en un array dado.
+
+function printSumArray(x) {
+  var sum = 0;
+  for(var i=0; i<x.length; i++) {
+    sum+=x[i];
+  }
+  return sum;
+}
+console.log( printSumArray([1,2,3]) ); // debería imprimir 6
+---------------------------------------------------------------------------------
+Bonus: LargestElement
+Crea una función que entregue el elemento más grande (largest element) en un array. 
+Por ejemplo largestElement([1,30,5,7]) debiera dar como resultado 30.
+
+function largestElement(arr){
+    var largest=arr[0];
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]>largest){
+            largest=arr[i];
+        }
+    }
+    return largest;
+}
+console.log(largestElement([1, 30, 5, 7]))
